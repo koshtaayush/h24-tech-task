@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should match the snapshot 1`] = `
+<styled.div>
+  <styled.h4>
+    Home24
+  </styled.h4>
+  <styled.div>
+    <Search
+      onChangeProp={[Function]}
+      placeholder="Search"
+      test-id="searchComponent"
+      value=""
+    />
+  </styled.div>
+</styled.div>
+`;

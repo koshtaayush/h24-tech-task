@@ -1,0 +1,280 @@
+.showbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.loader {
+    position: relative;
+    margin: 0 auto;
+    width: 60px;
+    height: 100%;
+}
+
+.loader::before {
+    content: '';
+    display: block;
+}
+
+.circular {
+    animation: rotate 2s linear infinite;
+    height: 60px;
+    transform-origin: center center;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.Loader2 {
+    margin: 20px auto;
+    width: 40px;
+}
+
+.Loader2 .circular {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+
+.snackbar {
+    visibility: hidden;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.snackbar.bottom {
+    bottom: 30px;
+}
+
+.snackbar.top {
+    top: 65px;
+}
+
+.snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 5s;
+    animation: fadein 0.5s, fadeout 0.5s 5s;
+}
+
+.snackbar .content {
+    background-color: #333;
+    color: #fff;
+    border-radius: 2px;
+    padding: 16px;
+    display: inline-block;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.productImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.productImg:hover {
+    opacity: 0.7;
+}
+
+.productImgmodal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.productImgmodal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: calc(100vh) !important;
+    max-width: 700px;
+    object-fit: contain;
+}
+
+.productImgcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.productImgmodal-content,
+.productImgcaption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.35s;
+    animation-name: zoom;
+    animation-duration: 0.35s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.productImgclose {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+    width: 38px;
+    height: 52px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.productImgclose:hover,
+.productImgclose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#order-dispatch-block .productImgmodal.imgPopupOpen {
+    transform: translate(100%, 0px);
+}
+
+#order-shipped-block .productImgmodal.imgPopupOpen {
+    transform: translate(200%, 0px);
+}
+
+#order-cancelled-block .productImgmodal.imgPopupOpen {
+    transform: translate(300%, 0px);
+}
+
+@media only screen and (max-width: 700px) {
+    .productImgmodal-content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleCard Should match the snapshot 1`] = `
+<styled.div>
+  <styled.img
+    alt="articleimage"
+    src="https://cdn1.home24.net/images/media/catalog/product/200x200/png/m/a/matratzenbezug-smood-webstoff-180-x-200cm-3477221.webp"
+  />
+  <styled.div>
+    <styled.div
+      test-id="articleName"
+    >
+      Premium Komfortmatratze Smood
+    </styled.div>
+    <styled.div>
+      €569.99
+    </styled.div>
+    <Button
+      buttonText="Add to cart"
+      buttonType="S"
+      disabled={false}
+      onClickProp={[Function]}
+      test-id="addToCartButton"
+    />
+  </styled.div>
+</styled.div>
+`;

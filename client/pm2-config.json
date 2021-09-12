@@ -1,0 +1,8 @@
+{
+    "apps": [
+        {
+            "name": "frontend-tech-task-application",
+            "script": "server.js"
+        }
+    ]
+}

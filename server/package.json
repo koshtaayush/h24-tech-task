@@ -1,0 +1,24 @@
+{
+  "name": "h24-tech-task-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node server",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.5.3",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
+    "typescript": "^3.9.7",
+    "ts-node": "^8.10.2"
+  },
+  "devDependencies": {
+    "@types/apicache": "^1.2.2",
+    "@types/express": "^4.17.7",
+    "@types/express-http-proxy": "^1.6.1",
+    "@types/node": "^14.6.0"
+  }
+}

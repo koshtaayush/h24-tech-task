@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Count Should match the snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <h3>
+        Möbel
+      </h3>
+    </styled.div>
+    <small>
+      <styled.div>
+         
+        (
+        68789
+        )
+      </styled.div>
+    </small>
+  </styled.div>
+  <styled.div>
+    SortBy: 
+    <styled.span>
+      Recommended
+    </styled.span>
+    <styled.ul
+      onClick={[Function]}
+    >
+      <styled.li>
+        Recommended
+      </styled.li>
+      <styled.li>
+        What's new
+      </styled.li>
+      <styled.li>
+        Popularity
+      </styled.li>
+      <styled.li>
+        Price Low to high
+      </styled.li>
+      <styled.li>
+        Price High to low
+      </styled.li>
+    </styled.ul>
+  </styled.div>
+</styled.div>
+`;

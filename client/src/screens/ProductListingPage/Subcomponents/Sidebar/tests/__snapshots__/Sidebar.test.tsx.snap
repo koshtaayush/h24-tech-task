@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar Should match the snapshot 1`] = `
+<styled.section>
+  <h3>
+    Kategorien
+  </h3>
+  <styled.ul>
+    <styled.div
+      key="Wohnzimmer"
+    >
+      <styled.a
+        href="/kategorie/wohnzimmermoebel/"
+      >
+        Wohnzimmer
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Schlafzimmer"
+    >
+      <styled.a
+        href="/kategorie/schlafzimmermoebel/"
+      >
+        Schlafzimmer
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Esszimmer"
+    >
+      <styled.a
+        href="/kategorie/esszimmermoebel/"
+      >
+        Esszimmer
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Büro"
+    >
+      <styled.a
+        href="/kategorie/bueromoebel/"
+      >
+        Büro
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Badmöbel"
+    >
+      <styled.a
+        href="/kategorie/badezimmermoebel/"
+      >
+        Badmöbel
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Flurmöbel & Dielenmöbel"
+    >
+      <styled.a
+        href="/kategorie/flur-und-diele/"
+      >
+        Flurmöbel & Dielenmöbel
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Küche & Bar"
+    >
+      <styled.a
+        href="/kategorie/kuechenmoebel/"
+      >
+        Küche & Bar
+      </styled.a>
+    </styled.div>
+    <styled.div
+      key="Kinderzimmer"
+    >
+      <styled.a
+        href="/kategorie/kinderzimmermoebel/"
+      >
+        Kinderzimmer
+      </styled.a>
+    </styled.div>
+  </styled.ul>
+</styled.section>
+`;
