@@ -2,3 +2,4 @@
 2. Animations would definitely add to a great user experience
 3. Wishlist feature apart from Add to cart option
 4. A different and more mobile friendly layout for mobile devices
+5. A central CSS variable and stylesheet so that code need not be repeated

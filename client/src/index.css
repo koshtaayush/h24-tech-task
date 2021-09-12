@@ -15,41 +15,6 @@ body {
   padding: 10px;
 }
 
-.header {
-  grid-area: header;
-  background-color: lightblue;
-}
-
-.header input {
-  float: right;
-}
-
-.sidebar {
-  grid-area: sidebar;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 0 0 0 8px;
-  padding: 8px 0;
-}
-
-.content {
-  grid-area: content;
-  grid-column: span 2;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: lightblue;
-  text-align: center;
-}
-
 h4{
   margin:0;
 }

@@ -24,8 +24,9 @@ const Count: React.FC<Props> = (props) => {
     /**
      * Function to changing sorting option
      */
-    const handleSelectedSortingOption = (e: any) => {
-        setSelectedSortingOption(e.target.innerText)
+    const handleSelectedSortingOption = (e:  React.MouseEvent<HTMLElement>) => {
+        let evtTarget = e.target as HTMLInputElement
+        setSelectedSortingOption(evtTarget.innerText)
         handleFetchList()
     }
 
@@ -42,6 +43,7 @@ const Count: React.FC<Props> = (props) => {
                         return category.categoryArticles.articles
                     }
                 )
+                console.log(articles)
             } else {
                 //error cases
             }

@@ -91,6 +91,11 @@ const ArticleList: React.FC<Props> = () => {
                     )
                 }
 
+                {isError && 
+                    <ErrorContainer>
+                        Unexpected Error Occured. Please refresh the page
+                    </ErrorContainer>}
+
             </PageApartFromHeader>
         </div>
     )
@@ -146,4 +151,8 @@ const Items = styled.div`
 
 const PageApartFromHeader = styled.div`
     margin-top: 3.125rem;
+`
+
+const ErrorContainer = styled.div`
+
 `
